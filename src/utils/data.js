@@ -1,139 +1,106 @@
 const data = {
   flasks: [
     {
-      displayName: 'Alchemical Chaos (Rotating)',
-      simName: 'Alchemical Chaos',
-      profilesetString: 'flask=flask_of_alchemical_chaos_3'
-    },
-    {
       displayName: 'Crit Flask',
       simName: 'CritFlask',
-      profilesetString: 'flask=flask_of_tempered_aggression_3'
+      profilesetString: 'flask=flask_of_the_shattered_sun_2'
     },
     {
       displayName: 'Haste Flask',
       simName: 'HasteFlask',
-      profilesetString: 'flask=flask_of_tempered_swiftness_3'
+      profilesetString: 'flask=flask_of_the_blood_knights_2'
     },
     {
       displayName: 'Mastery Flask',
       simName: 'MasteryFlask',
-      profilesetString: 'flask=flask_of_tempered_mastery_3'
+      profilesetString: 'flask=flask_of_the_magisters_2'
     },
     {
       displayName: 'Vers Flask',
       simName: 'VersFlask',
-      profilesetString: 'flask=flask_of_tempered_versatility_3'
+      profilesetString: 'flask=flask_of_thalassian_resistance_2'
     },
   ],
   potions: [
     {
-      displayName: 'Tempered Potion',
-      simName: 'Tempered',
-      profilesetString: 'potion=tempered_potion_3'
+      displayName: 'Light\'s Potential',
+      simName: 'LightsPotential',
+      profilesetString: 'potion=lights_potential_2'
     },
     {
-      displayName: 'Unwavering Focus',
-      simName: 'Unwavering',
-      profilesetString: 'potion=potion_of_unwavering_focus_3'
+      displayName: 'Potion of Recklessness',
+      simName: 'RecklessnessPot',
+      profilesetString: 'potion=potion_of_recklessness_2'
     },
     {
-      displayName: 'Grotesque Vial',
-      simName: 'Grotesque',
-      profilesetString: 'potion=grotesque_vial_3'
+      displayName: 'Potion of Zealotry',
+      simName: 'ZealotryPot',
+      profilesetString: 'potion=potion_of_zealotry_2'
     },
+    {
+      displayName: 'Draught of Rampant Abandon',
+      simName: 'RampantAbandonPot',
+      profilesetString: 'potion=draught_of_rampant_abandon_2'
+    }
   ],
   runes: [
     {
-      displayName: 'Ironclaw Whetstone (AP)',
-      simName: 'Ironclaw',
-      profilesetString: 'temporary_enchant=main_hand:ironclaw_whetstone_3',
+      displayName: 'Refulgent Whetstone (AP)',
+      simName: 'Whetstone',
+      profilesetString: 'temporary_enchant=main_hand:refulgent_whetstone_2',
       additionalParams: {
         includeOffhand: {
           inline: true,
-          profilesetString: '/off_hand:main_hand:ironclaw_whetstone_3',
+          profilesetString: '/off_hand:refulgent_whetstone_2',
         }
       }
     },
     {
-      displayName: 'Oil of Deep Toxins (Damage)',
-      simName: 'DeepToxins',
-      profilesetString: 'temporary_enchant=oil_of_deep_toxins_3',
+      displayName: 'Thalassian Phoenix Oil (Crit/Haste)',
+      simName: 'PhoenixOil',
+      profilesetString: 'temporary_enchant=main_hand:thalassian_phoenix_oil_2',
       additionalParams: {
         includeOffhand: {
           inline: true,
-          profilesetString: '/off_hand:oil_of_deep_toxins_3',
+          profilesetString: '/off_hand:thalassian_phoenix_oil_2',
         }
       }
     },
     {
-      displayName: 'Algari Mana Oil (Crit/Haste)',
-      simName: 'ManaOil',
-      profilesetString: 'temporary_enchant=algari_mana_oil_3',
+      displayName: 'Oil of Dawn (Holy Damage Proc)',
+      simName: 'OilOfDawn',
+      profilesetString: 'temporary_enchant=main_hand:oil_of_dawn_2',
       additionalParams: {
         includeOffhand: {
           inline: true,
-          profilesetString: '/off_hand:algari_mana_oil_3',
+          profilesetString: '/off_hand:oil_of_dawn_2',
         }
       }
     },
-  ],
-  unboundChangeling: [
     {
-      displayName: 'Haste',
-      simName: 'HasteChangeling',
-      profilesetString: 'shadowlands.unbound_changeling_stat_type=haste',
-    },
-    {
-      displayName: 'Crit',
-      simName: 'CritChangeling',
-      profilesetString: 'shadowlands.unbound_changeling_stat_type=crit',
-    },
-    {
-      displayName: 'Mastery',
-      simName: 'MasteryChangeling',
-      profilesetString: 'shadowlands.unbound_changeling_stat_type=mastery',
-    },
-    {
-      displayName: 'All',
-      simName: 'AllStatChangeling',
-      profilesetString: 'shadowlands.unbound_changeling_stat_type=all',
+      displayName: 'Smugglers\' Enchanted Edge (Holy Damage Proc)',
+      simName: 'SmugglersEdge',
+      profilesetString: 'temporary_enchant=main_hand:smugglers_enchanted_edge_2',
+      additionalParams: {
+        includeOffhand: {
+          inline: true,
+          profilesetString: '/off_hand:smugglers_enchanted_edge_2',
+        }
+      }
     },
   ],
   food: [
     {
-      displayName: 'Main Stat Feast (+445)',
+      displayName: 'Main Stat Food (+50)',
       simName: 'PrimaryFood',
-      profilesetString: 'food=feast_of_the_midnight_masquerade'
+      profilesetString: 'food=harandar_celebration'
     },
     {
-      displayName: 'Highest Secondary (+469)',
+      displayName: 'Highest Secondary Food (+64)',
       simName: 'SecondaryFood',
-      profilesetString: 'food=beledars_bounty'
+      profilesetString: 'food=blooming_feast'
     },
   ],
-  cyrce: [
-    {
-      displayName: 'Haste Highest',
-      simName: 'HasteCyrce',
-      profilesetString: 'thewarwithin.windsingers_passive_stat=haste',
-    },
-    {
-      displayName: 'Crit Highest',
-      simName: 'CritCyrce',
-      profilesetString: 'thewarwithin.windsingers_passive_stat=crit',
-    },
-    {
-      displayName: 'Mastery Highest',
-      simName: 'MasteryCyrce',
-      profilesetString: 'thewarwithin.windsingers_passive_stat=mastery',
-    },
-    {
-      displayName: 'Vers Highest',
-      simName: 'VersCyrce',
-      profilesetString: 'thewarwithin.windsingers_passive_stat=vers',
-    },
-  ]
 }
 
 export default data;

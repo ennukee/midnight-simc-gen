@@ -3,7 +3,7 @@ import './Page.scss';
 import { Title, Text, Checkbox as MantineCheckbox, Button, Textarea, Alert } from '@mantine/core';
 import data from 'utils/data';
 
-const VERSION_STRING = '1.0.1';
+const VERSION_STRING = '1.0.0';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -23,7 +23,6 @@ const reducer = (state, action) => {
 // ! Keys must match the section names and simName values of items in src\utils\data.js
 const defaultState = {
   flasks: {
-    AlchemicalChaos: false,
     CritFlask: false,
     HasteFlask: false,
     MasteryFlask: false,
@@ -161,8 +160,8 @@ export default function Page() {
 
   return (
     <div id="main">
-      <Title order={1}>TWW Simc Configurables</Title>
-      <Text size="sm"><a href="https://github.com/ennukee/tww-simc-gen/blob/master/how-to-use.md">How do I use the output?</a></Text>
+      <Title order={1}>Midnight Simc Configurables</Title>
+      <Text size="sm"><a href="https://github.com/ennukee/midnight-simc-gen/blob/master/how-to-use.md">How do I use the output?</a></Text>
       {error && <Alert className="error" color="red" title="Error">{error}</Alert>}
       <div className="section-container">
         <div className="section">
@@ -220,31 +219,6 @@ export default function Page() {
             ))}
           </div>
         </div>
-        <div className="section">
-          <Title order={2}>Cyrce's Circlet (Windsinger)</Title>
-          <div className="additional-params">What stat is your highest when equipping Cyrce?</div>
-          <div className="option-toggles">
-            {data.cyrce.map((type) => (
-              <Checkbox
-                checked={toggleData.cyrce[type.simName]}
-                onClick={() => handleToggleClick('cyrce', type.simName)}
-                displayName={type.displayName}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="section">
-          <Title order={2}>Unbound Changeling</Title>
-          <div className="option-toggles">
-            {data.unboundChangeling.map((type) => (
-              <Checkbox
-                checked={toggleData.unboundChangeling[type.simName]}
-                onClick={() => handleToggleClick('unboundChangeling', type.simName)}
-                displayName={type.displayName}
-              />
-            ))}
-          </div>
-        </div>
       </div>
       <div className="buttons">
         <Button onClick={handleGenerateSimcString}>Generate simc string</Button>
@@ -257,7 +231,7 @@ export default function Page() {
       <div className="footer">
         <Text size="xs" className="footer-text">for any suggestions or bugs, reach out to ennukee on Discord</Text>
         <span>&nbsp;-&nbsp;</span>
-        <Text size="xs"><a href="https://github.com/ennukee/tww-simc-gen/blob/master/changelog.md">v{VERSION_STRING}</a></Text>
+        <Text size="xs"><a href="https://github.com/ennukee/midnight-simc-gen/blob/master/changelog.md">v{VERSION_STRING}</a></Text>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 {
-  "name": "tww-simc-gen",
-  "homepage": "https://dbowers.io/tww-simc-gen",
+  "name": "midnight-simc-gen",
+  "homepage": "https://dbowers.io/midnight-simc-gen",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
