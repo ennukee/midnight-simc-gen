@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/midnight-simc-gen/static/css/main.9d68dc40.css",
+    "main.js": "/midnight-simc-gen/static/js/main.670431da.js",
+    "index.html": "/midnight-simc-gen/index.html",
+    "main.9d68dc40.css.map": "/midnight-simc-gen/static/css/main.9d68dc40.css.map",
+    "main.670431da.js.map": "/midnight-simc-gen/static/js/main.670431da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d68dc40.css",
+    "static/js/main.670431da.js"
+  ]
+}
